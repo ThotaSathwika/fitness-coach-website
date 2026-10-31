@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-night-950 text-white font-sans antialiased; }
+  h1, h2, h3 { @apply font-display tracking-wide; }
+}
+@layer components {
+  .container-x { @apply w-full max-w-7xl mx-auto px-5 md:px-8; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-md px-7 py-3.5 text-sm font-bold uppercase tracking-wider transition duration-200; }
+  .btn-volt { @apply btn bg-volt-500 text-night-950 hover:bg-volt-300 hover:shadow-[0_0_30px_rgba(198,255,61,.4)]; }
+  .btn-line { @apply btn border border-white/25 hover:border-volt-500 hover:text-volt-500; }
+  .input { @apply w-full rounded-md border border-night-600 bg-night-800 px-4 py-3 outline-none transition placeholder:text-white/35 focus:border-volt-500; }
+  .label { @apply mb-2 block text-xs font-semibold uppercase tracking-widest text-white/50; }
+  .eyebrow { @apply mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-volt-500; }
+}
